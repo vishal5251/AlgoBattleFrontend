@@ -4,6 +4,7 @@ import axios from 'axios';
 const BASE_URL = `${process.env.Server_Base_Url}/api/comparisons`;
 
 export const saveComparison = async (data) => {
+  console.log("Base_url: ", BASE_URL)
   const res = await axios.post(`${BASE_URL}/save`, data);
   return res.data;
 };
