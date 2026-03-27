@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // const BASE_URL = 'http://localhost:5000/api/comparisons';
-const BASE_URL = `${process.env.Server_Base_Url}/api/comparisons`;
+const BASE_URL = `/api/comparisons`;
 
 export const saveComparison = async (data) => {
   console.log("Base_url: ", BASE_URL)
